@@ -18,6 +18,7 @@ namespace Task_06
         }
 
         Tovar t = null;
+
         private void AddGood_Click(object sender, EventArgs e)
         {
             t = new Tovar();

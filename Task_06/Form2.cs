@@ -37,16 +37,16 @@ namespace Task_06
             if (t == null) t = new Tovar();
             t.Name = textBox1.Text;
             t.Made_in = textBox2.Text;
-            try
-            {/* При преобразовании из строки в вещественное число
-              произойдет ошибка, если строка неверного формата*/
-                t.Price = Convert.ToDouble(textBox3.Text);
-            }
-            catch
-            {
-                MessageBox.Show("Цена указана неверно");
-                return;
-            }
+                try
+                {/* При преобразовании из строки в вещественное число
+                  произойдет ошибка, если строка неверного формата*/
+                    t.Price = Convert.ToDouble(textBox3.Text);
+                }
+                catch
+                {
+                    MessageBox.Show("Цена указана неверно");
+                    return;
+                }
             this.DialogResult = DialogResult.OK;
 
         }
